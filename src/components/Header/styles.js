@@ -3,11 +3,15 @@ import styled from 'styled-components/native';
 import colors from '../../styles/colors';
 import logo from '../../assets/images/logo.png';
 
+export const Wrapper = styled.SafeAreaView`
+  background: ${colors.dark};
+  flex-direction: row;
+`;
+
 export const HeaderContainer = styled.View`
   flex-direction: row;
-  flex: 0;
-  background: ${colors.dark};
-  padding: 25px;
+  flex: 1;
+  padding: 25px 25px 0;
   justify-content: space-between;
 `;
 
@@ -17,8 +21,8 @@ export const HeaderLogo = styled.Image.attrs({
   source: logo,
   resizeMode: 'cover',
 })`
-  width: 160px;
-  height: 21px;
+  width: 185px;
+  height: 24px;
 `;
 
 export const CartContainer = styled.TouchableOpacity`
